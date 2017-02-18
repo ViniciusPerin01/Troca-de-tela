@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.robso.trocatelas.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <Button
+        android:text="Modo 1 - Primeiro botão"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonStart1"
+        android:layout_marginBottom="14dp"
+        android:layout_above="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+        <!-- Ao clicar neste botão, irá acionar o evento onClick-->
+
+    <Button
+        android:text="Modo 1 - Segundo botão"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonStart2"
+        android:layout_marginBottom="14dp"
+        android:layout_above="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="@dimen/txt_size"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <!-- no arquivo dimens.xml, você deve criar uma nova linha com: <dimen name="txt_size">30sp</dimen>
+    Segue a mesma lógica que as strings.xml, porém agora com tamanho, no caso estaremos usando essa dimensão em textSize-->
+    <Button
+        android:text="Trocar act"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TrocaAct"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+</LinearLayout>
