@@ -1,0 +1,21 @@
+//Nome do pacote aqui
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class RecebeIntent extends AppCompatActivity {
+
+    TextView txt;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_recebe_intent);
+        txt = (TextView)findViewById(R.id.TxtRecebe);
+        if(getIntent().getExtras().getString("qtd") != null){
+            String ValorRecebido = getIntent().getExtras().getString("qtd");
+
+            txt.setText("Você clicou: " + ValorRecebido + " vezes");
+        }
+    }
+}
